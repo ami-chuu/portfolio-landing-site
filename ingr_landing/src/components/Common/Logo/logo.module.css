@@ -1,0 +1,30 @@
+.container_vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_horizontal {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 150px;
+    transition: transform 0.2s ease;
+    margin-bottom: 0;
+}
+
+.logo:hover {
+    transform: scale(1.02)
+}
+
+.text {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+
+}

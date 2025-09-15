@@ -1,0 +1,109 @@
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+   /* border-bottom: var(--secondary-background-color) solid 5px; */
+    box-shadow: 0px 2px 2px 2px var(--secondary-background-color);
+    background-color: white;
+    /* background-color: var(--secondary-background-color); */
+    z-index: 1;
+    /*
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    */
+}
+
+
+.link_container {
+    /* margin-top: 30px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--dark-shades);
+    transition: transfrom 0.2s ease;
+}
+
+.logo_container:hover {
+    transform: scale(1.02);
+}
+
+.logo {
+    max-height: 30px;
+}
+
+.header_link {
+    color: var(--dark-shades);
+    text-decoration: none;
+    text-align: center;
+}
+
+.header_link:hover {
+    color: var(--accent-color)
+}
+
+.mobile_menu_button {
+    display: none;
+    background-color: none;
+    height: 30px;
+}
+
+.mobile_header_menu {
+    display: none;
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+    top: 50px;
+    box-shadow: 0px 2px 2px 2px var(--secondary-background-color);
+}
+
+@media(max-width: 1200px) {
+    .header_link {
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 760px) {
+    .link_container {
+        display: none;
+    }
+
+    .mobile_menu_button {
+        display: block;
+    }
+
+    .header_link {
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .mobile_header_menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .header_li {
+        border-top: 2px solid var(--secondary-background-color);
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+}

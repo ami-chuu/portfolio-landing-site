@@ -1,0 +1,143 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: var(--main-width);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: var(--main-radius);
+    border: solid 2px var(--secondary-background-color);
+    /* box-shadow: 0px 4px 4px 4px var(--secondary-background-color); */
+    width: 100%;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.product_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo_container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.name {
+    color: var(--brand-color);
+    font-size: 6rem; 
+    line-height: 0.2rem;
+    transition: transform 0.2s ease;
+}
+
+.name:hover {
+    transform: scale(1.02);
+}
+
+.description {
+    color: var(--dark-shades);
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.image {
+    transition: transform 0.2s ease;
+    max-width: 100%;
+    max-height: 400px;
+    flex-shrink: 0;
+    height: auto;
+}
+
+.image:hover {
+    transform: scale(1.02);
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: var(--main-radius);
+    transition: transform 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 1360px) {    
+    .container {
+        padding: 0;
+    }
+
+    .image {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .product_info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo_container {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px
+    }
+}
+
+@media (max-width: 769px) {
+    .card {
+        padding: 10px;
+    }
+
+    .product_info {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+}
