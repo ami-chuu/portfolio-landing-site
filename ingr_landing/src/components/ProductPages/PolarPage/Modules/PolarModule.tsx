@@ -12,7 +12,7 @@ function PolarModule({title, description, is_basic}: PolarModuleType) {
             </div>
             <p className={styles.text}>{description}</p>
         </div>
-    )
+    );
 }
 
 export default PolarModule;

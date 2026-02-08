@@ -34,7 +34,7 @@ function PolarInformation() {
                 
             </div>
         </div>
-    )
+    );
 }
 
 export default PolarInformation;

@@ -1,8 +1,7 @@
-import type { LogoType } from "../Common/LogoType";
 import type { SectionTitleType } from "../Common/SectionTypes";
 
 interface CompanyInformation {
-    logo: LogoType;
+    logo_src: string;
     section_title: SectionTitleType;
     text: string;
     title: string;

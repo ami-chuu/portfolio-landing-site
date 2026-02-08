@@ -1,69 +1,31 @@
-# React + TypeScript + Vite
+# Русский
+## Описание
+Это сайт лендинг написанный мной для компании, в которой я получил работу на его создание как приз за второе место в соревновании "Профессионалы" регионального этапа.
+## Технические особенности
+- Написан полностью на React с Typescript
+- Для роутинга используется react-router
+- Стили реализуются через CSS-модули
+- Используется data-driven подход, весь текст и подобные данные вынесены в отдельный json файл для более удобного редактирования и вводятся в компоненты посредством Context API
+- Присутствует мета-информация о страницах, ARIA-метки для доступности, семантическая вёрстка, alt-подписи изображений
+- Сайт полностью адаптивный
+- Дизайн и структуры выполнены в стиле согласно требованиям заказчика
+- Присутствует интеграция Яндекс-карт 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# English
+## Description
+This is a landing site that I made for a company, where I got a job as a prize for taking second place in the regional stage of the international coding competition.
+## Technical features
+- Written in Typescript with React
+- react-router library is used for implementing routing
+- Styles are implemented using CSS modules system
+- Data-Driven approach is used, all text and other content data are placed in the separate data for easier editing and injected into the components using the Context
+- The pages include meta-information, ARIA labels for accessibility, semantic markup and alt-texts for images
+- The website is entirely adaptive
+- The design is created in a style and structure that meet the customer's requirements
+- Has the maps integration
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Скриншоты/Screenshots
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-4.png)

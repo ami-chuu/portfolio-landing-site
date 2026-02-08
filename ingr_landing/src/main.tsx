@@ -1,8 +1,8 @@
-import { StrictMode, useEffect } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import Home from './Home.tsx'
-import { RouterProvider, createBrowserRouter, useLocation } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter} from 'react-router-dom';
 import Polar from './Polar.tsx';
 
 const router = createBrowserRouter(

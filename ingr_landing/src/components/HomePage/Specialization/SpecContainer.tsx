@@ -27,7 +27,7 @@ function SpecializationContainer() {
             </div>
             <SectionSplitter/>
         </>
-    )
+    );
 }
 
 export default SpecializationContainer;

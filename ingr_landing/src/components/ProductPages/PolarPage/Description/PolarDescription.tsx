@@ -26,7 +26,7 @@ function PolarDescription() {
                 </ul>
             </div>
         </div>
-    )
+    );
 }
 
 export default PolarDescription;

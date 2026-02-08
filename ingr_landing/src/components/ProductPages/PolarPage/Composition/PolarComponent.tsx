@@ -9,7 +9,7 @@ function PolarComponent({index, amount, name, description}: PolarComponentType) 
             <td>{name}</td>
             <td>{description}</td>
         </tr>
-    )
+    );
 }
 
 export default PolarComponent;

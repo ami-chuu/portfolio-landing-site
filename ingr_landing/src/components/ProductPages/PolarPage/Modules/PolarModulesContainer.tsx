@@ -21,7 +21,7 @@ function PolarModulesContainer() {
                 }
             </div>
         </div>
-    )
+    );
 }
 
 export default PolarModulesContainer

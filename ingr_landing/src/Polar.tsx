@@ -18,6 +18,7 @@ function Polar() {
     return(
         <>
             <title>Поляр</title>
+            <link rel="icon" type="image/svg+xml" href="/ingr_logo.svg" />
             <meta name="description" content="Поляр - образовательный набор для соревнований и обучения робототехнике, модульный набор для сборки универсальной робототехнической платформы, предназначенной для изучения механики, математики и алгоритмов"/>
             <DataContext.Provider value={PageDataJson as PageData}>
                 <div className={styles.m}>

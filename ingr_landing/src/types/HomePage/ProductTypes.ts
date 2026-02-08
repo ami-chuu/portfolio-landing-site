@@ -1,5 +1,5 @@
 import type { SectionTitleType } from "../Common/SectionTypes";
-import type { Logo } from "../Common/LogoType";
+import type { LogoType } from "../Common/LogoType";
 
 
 interface Product {
@@ -7,7 +7,7 @@ interface Product {
     image_src: string;
     description: string;
     ref: string;
-    logos?: Logo[];
+    logos?: LogoType[];
     about_button_text: string;
 }
 

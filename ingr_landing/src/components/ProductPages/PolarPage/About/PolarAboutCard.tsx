@@ -8,7 +8,7 @@ function PolarAboutCard({image_src, image_alt, text}: PolarAboutCardType) {
             {image_src ? <img src={image_src} alt={image_alt} width={"100px"}/> : null}
             <ColorText className={styles.card_text}>{text}</ColorText>
         </div>
-    )
+    );
 }
 
-export default PolarAboutCard
+export default PolarAboutCard;

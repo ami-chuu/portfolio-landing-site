@@ -16,10 +16,9 @@ function ListElement({children}: ListElementProps) {
                 <h1 className={styles.text}>{children}</h1>
             </div>
         </li>
-    )
+    );
 }
 
-//{title, phrase, text, list, post_list_text}: CompanyInformation
 function InformationContainer() {
     const context: CompanyInformation | undefined = useContext(DataContext).information;
 
@@ -42,7 +41,7 @@ function InformationContainer() {
                 </div>
             </div>
         </>
-    )
+    );
 }
 
 export default InformationContainer;

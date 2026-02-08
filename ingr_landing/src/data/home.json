@@ -59,12 +59,6 @@
         },
         "people": [
             {
-                "avatar_src": "gendir.jpg",
-                "alt_text": "Фотография генерального директора - Клочихина Артёма",
-                "name": "Клочихин Артём",
-                "role": "Генеральный директор"
-            },
-            {
                 "avatar_src": "person_placeholder.png",
                 "name": "Имя фамилия",
                 "role": "Должность"

@@ -19,7 +19,7 @@ function ProductContainer() {
                 )
             }
         </div>
-    ) 
+    );
 }
 
 export default ProductContainer;

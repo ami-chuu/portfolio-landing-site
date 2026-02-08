@@ -21,7 +21,7 @@ function PersonContainer() {
                 }
             </div>
         </div>
-    )
+    );
 }
 
 export default PersonContainer;

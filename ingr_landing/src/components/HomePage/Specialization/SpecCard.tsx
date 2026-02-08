@@ -16,7 +16,7 @@ function SpecializationCard({image_src, title, description}: Specialization) {
                 }
             </div>
         </div>
-    )
+    );
 }
 
 export default SpecializationCard;

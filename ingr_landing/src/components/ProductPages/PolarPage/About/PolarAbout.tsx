@@ -28,7 +28,7 @@ function PolarAboutContainer() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default PolarAboutContainer;

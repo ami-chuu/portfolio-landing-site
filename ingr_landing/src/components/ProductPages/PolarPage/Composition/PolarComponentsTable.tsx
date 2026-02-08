@@ -29,7 +29,7 @@ function PolarComponentTable() {
                 </tbody>
             </table>
         </div>
-    )
+    );
 }
 
 export default PolarComponentTable;

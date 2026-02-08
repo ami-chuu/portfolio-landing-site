@@ -26,7 +26,7 @@ function ProductCard({name, image_src, description, ref, logos, about_button_tex
                 ) : null
             }
         </div>
-    )
+    );
 }
 
 export default ProductCard;
