@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-    # workflow_dispatch:
     paths:
       - '**/*' # Runs on any change
+    workflow_dispatch:
 
 
 permissions:
