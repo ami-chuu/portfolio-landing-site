@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - '**/*' # Runs on any change
-    workflow_dispatch:
+    # workflow_dispatch:
 
 
 permissions:
