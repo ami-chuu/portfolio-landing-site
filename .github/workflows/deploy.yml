@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-    workflow_dispatch:
-    # paths:
-    #   - 'index.html' # Run only when it changes
+    # workflow_dispatch:
+    paths:
+      - '**/*' # Runs on any change
 
 
 permissions:
@@ -28,13 +28,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Setup dependencies
+        run: npm ci
+
+      - name: Build React app
+        run: npm run build
+
       - name: Set up GitHub Pages
         uses: actions/configure-pages@v4
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: build
 
       - name: Deploy to GitHub Pages
         id: deployment
