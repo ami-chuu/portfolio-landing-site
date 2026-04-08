@@ -1,0 +1,40 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+    # paths:
+    #   - 'index.html' # Run only when it changes
+
+
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment: 
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
